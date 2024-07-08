@@ -23,7 +23,8 @@ resource "aws_instance" "nginx-server"{
     ]
 }
 
-
+#Comando para crear la llave
+#ssh-keygen -t rsa -b 2048 -f "nginx-server.key"
 ##Crea la instancia y sube la llave a AWS
 
 resource "aws_key_pair" "nginx-server-ssh" {
